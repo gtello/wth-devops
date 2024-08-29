@@ -4,9 +4,28 @@ import Pet from "../models/Pet";
 import Hours from '../components/Hours';
 
 const Index = ({ pets }) => {
-
   return (
     <>
+      <div style={{ textAlign: 'center', margin: '20px 0' }}>
+        <a
+          href="https://github.com/gtello/wth-devops"
+          style={{
+            fontSize: '24px',
+            fontWeight: 'bold',
+            color: '#000',
+            textDecoration: 'none',
+            backgroundColor: '#f0f0f0',
+            padding: '10px 20px',
+            borderRadius: '5px',
+            display: 'inline-block',
+            transition: 'background-color 0.3s',
+          }}
+          onMouseOver={(e) => e.target.style.backgroundColor = '#e0e0e0'}
+          onMouseOut={(e) => e.target.style.backgroundColor = '#f0f0f0'}
+        >
+          Link al Repo en Github
+        </a>
+      </div>
 
       <Hours />
 
