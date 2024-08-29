@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    allow:
+      # Allow updating GitHub Actions actions
+      github-actions: true
+    ignore:
+      # Ignore updates to dependencies that start with 'aws-sdk'
+      - dependency-name: "aws-sdk*"
+    reviewers:
+      - username: octocat
+    assignees:
+      - username: octocat
+    labels:
+      - "dependencies"
