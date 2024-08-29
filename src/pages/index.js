@@ -10,11 +10,11 @@ const Index = ({ pets }) => {
         <a
           href="https://github.com/gtello/wth-devops"
           style={{
-            fontSize: '24px',
+            fontSize: '32px',
             fontWeight: 'bold',
             color: '#000',
             textDecoration: 'none',
-            backgroundColor: '#f0f0f0',
+            backgroundColor: '#1c4ed9',
             padding: '10px 20px',
             borderRadius: '5px',
             display: 'inline-block',
